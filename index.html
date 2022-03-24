@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Comics Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Create a header tag and add a logo image inside it -->
+    <header>
+        <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/1200px-Marvel_Logo.svg.png" alt="">
+    </header>
+    <!-- Create a container holding the heading, paragraph -->
+    <div class="top container ">
+        <h1>Welcome to Marvel Comics Store!</h1><br>
+        <p>Select your favorite Marvel Comics, confirm your mobile number <br> and get them delivered in 4 to 5 days -
+            <b>Straight from the Store</b>
+        </p>
+        <br>
+        <div class="button store"> <a href="#table"> <b>What’s in store?</b> </a> </div>
+    </div>
+    <div class="table container">
+        <h2>Here’s What Is In Store Today</h2>
+        <!-- Iteration 1: Create a table to display the items avaliable in the Groove store -->
+        <table id="table">
+            <tr>
+              <th>SELECT</th>
+              <th>ITEM</th>
+              <th>NAME</th>
+              <th>PRICE</th>
+              <th>No. of Pages and Condition Of the Book</th>
+              <th>QUANTITY</th>  
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id="checkbox"></td>
+                <td>
+                 <img src="https://pictures.abebooks.com/inventory/md/md1301635664.jpg" alt="">
+                </td>
+                <td>The Amazing Spider-Man #155</td>
+                <td> INR 23,000 /-</td>
+                <td>32 pages<br> Condition-Very Good.</td>
+                <td><input id="quantity" type="number"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id="checkbox"></td>
+                <td><img src="https://i.annihil.us/u/prod/marvel/i/mg/3/d0/519b819d54e34/detail.jpg" alt=""></td>
+                <td>Avengers (1963) #1</td>
+                <td>INR 10,000 /-</td>
+                <td>150 pages <br>
+                    Condition-Excellent.</td>
+                <td><input id="quantity" type="number"></td>
+            </tr>
+            <tr>
+               <td><input type="checkbox" name="" id="checkbox"></td>
+               <td>
+                   <img src="https://i.annihil.us/u/prod/marvel/i/mg/1/00/5029570997db4/clean.jpg" alt="">
+               </td>
+               <td>
+                Marvel Comics (1939) #1</td>
+               <td>INR 1,00,000 /- </td>
+               <td> 65 pages  <br> Condition - Good</td>
+               <td><input id="quantity" type="number"></td>
+            </tr>
+            <tr>
+                 <td><input type="checkbox" name="" id="checkbox"></td>
+                 <td>
+                     <img src="https://i.annihil.us/u/prod/marvel/i/mg/3/a0/5991fa03329b7/clean.jpg" alt="">
+                 </td>
+                 <td>Avengers (1963) #1</td>
+                 <td>INR 15,000 /-</td>
+                 <td>66 pages<br>
+                    Condition-Average</td>
+                 <td><input id="quantity" type="number"></td>
+            </tr>
+        </table>
+        <br><br>
+        <p>One last step to place your order. <br> Enter your mobile number and you are done!</p>
+        <br>
+        <input type="text" id="mobile" placeholder="Enter your mobile number">
+        <br><br>
+        <div class="button" onclick="buy" id="buy-now"> <b>Buy Now</b> </div>
+        <h3 id="thanks">Thank You For Shopping With Us.</h3>
+        <br><br>
+        <footer>
+            <p>Made  by ProGrad Junior, Ramcharan</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById("buy-now").onclick = (evt) => {
+            document.getElementById("thanks").style.display = "inherit";
+            document.getElementById("buy-now").style.display = "none";
+        }
+    </script>
+</body>
+</html>
